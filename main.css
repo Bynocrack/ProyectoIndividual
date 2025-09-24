@@ -1,0 +1,36 @@
+a {
+   color: aliceblue;
+}
+a:visited {
+   color: lightgray;
+}
+a:hover, a:active {
+   color: #eee;
+}
+nav {
+   color: #171717;
+   z-index: 100;
+   position: fixed;
+   background-color: #171717;
+}
+nav ul li {
+   float: left;
+}
+nav ul {
+   list-style-type: none;
+   margin: 0px;
+   padding: 0px;
+}
+ul li a {
+   display: block;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+ul li a:hover {
+   background-color: #1F2556;
+}
+body {
+   background-color: #333;
+   color: whitesmoke;
+}
