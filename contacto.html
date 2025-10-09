@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Josue Madueño" />
+    <meta name="description" content="about me" />
+    <title>Sobre mí</title>
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link rel="stylesheet" href="contacto.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://www.nerdfonts.com/assets/css/webfont.css"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><i class="nf nf-cod-home"></i></a>
+          </li>
+          <li><a href="https://github.com/Bynocrack">Mi github</a></li>
+          <li><a href="contacto.html">Mandame un mensaje!</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Contactame</legend>
+          <textarea
+            placeholder="Hey! Necesito de tus habilidades."
+            name="mensaje"
+            required
+            autofocus
+          ></textarea
+          ><br />
+          <label for="via">Por donde me quieres enviar el mensaje?</label><br />
+          <input type="checkbox" name="via" value="whatsapp" /> Whatsapp<br />
+          <input type="checkbox" name="via" value="facebook" /> Facebook<br />
+          <input type="checkbox" name="via" value="email" /> Correo<br />
+          <label for="respuesta">Como te contacto de vuelta?</label><br />
+          <input
+            type="text"
+            name="respuesta"
+            placeholder="Mandame un mensaje a mi número 987654321."
+            required
+          /><br />
+          <button type="submit">Enviar mensaje!</button>"
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <p>Josue Madueño &lt;&lt;&copy;&gt;&gt; 2025</p>
+    </footer>
+  </body>
+</html>

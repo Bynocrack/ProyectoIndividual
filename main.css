@@ -1,36 +1,48 @@
 a {
-   color: aliceblue;
+  color: aliceblue;
 }
 a:visited {
-   color: lightgray;
+  color: lightgray;
 }
-a:hover, a:active {
-   color: #eee;
+a:hover {
+  color: #eee;
 }
 nav {
-   color: #171717;
-   z-index: 100;
-   position: fixed;
-   background-color: #171717;
+  color: #171717;
+  z-index: 100;
+  position: fixed;
+  background-color: #171717;
 }
 nav ul li {
-   float: left;
+  float: left;
 }
 nav ul {
-   list-style-type: none;
-   margin: 0px;
-   padding: 0px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: flow;
 }
 ul li a {
-   display: block;
-   text-align: center;
-   padding: 14px 16px;
-   text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 ul li a:hover {
-   background-color: #1F2556;
+  background-color: #1f2556;
 }
 body {
-   background-color: #333;
-   color: whitesmoke;
+  background-color: #191919;
+  color: whitesmoke;
+  margin: 0px;
+}
+
+main {
+  padding-top: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+footer {
+  text-align: center;
 }
