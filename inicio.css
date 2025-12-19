@@ -8,29 +8,23 @@
 }
 
 #descripcion {
-  display: grid;
-  grid-template-columns: repeat(3, 300px);
-  grid-template-rows: repeat(3, 100px);
+  display: flex;
+  flex-flow: row wrap;
   padding: 20px;
   margin: 5% 23%;
 }
 
 #portada {
   border-radius: 1000px;
-  width: 300px;
-  height: 300px;
-  grid-row: 1 / 4;
-  grid-column: 1 / 2;
+  aspect-ratio: 1/1;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  max-height: 200px;
+  flex: 1 1 200px;
 }
 
-#descripcion h2 {
-  grid-row: 1 / 2;
-  grid-column: 2 / 4;
-  margin: 5%;
-}
-
-#descripcion p {
-  grid-row: 2 / 4;
-  grid-column: 2 / 4;
+#descripcion-texto {
+  flex: 1 1 200px;
   margin: 5%;
 }
