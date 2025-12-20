@@ -17,6 +17,7 @@
 #portada {
   border-radius: 1000px;
   aspect-ratio: 1/1;
+  object-fit: cover;
   width: 100%;
   max-width: 200px;
   height: auto;

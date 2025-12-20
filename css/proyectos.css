@@ -1,0 +1,15 @@
+.slider--inner {
+  display: flex;
+  flex-flow: row nowrap;
+  transition: all 0.3s ease-in-out;
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.proyecto {
+  flex: 0 0 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
