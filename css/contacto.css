@@ -1,0 +1,36 @@
+main {
+  text-align: left;
+}
+
+form {
+  padding: 5%;
+}
+
+fieldset {
+  padding: 2%;
+}
+
+fieldset input,
+fieldset textarea {
+  width: 98%;
+  padding: 10px 0px 10px 10px;
+  margin: 5px 0px 15px 0px;
+}
+
+fieldset legend {
+  width: auto;
+}
+
+fieldset button {
+  background-color: #1f255600;
+  border: whitesmoke 2px solid;
+  color: whitesmoke;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+fieldset button:hover {
+  background-color: whitesmoke;
+  color: #191919ed;
+}

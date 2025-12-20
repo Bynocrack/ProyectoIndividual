@@ -42,20 +42,21 @@ ul li a:hover {
 }
 
 body {
-  background-image: url(imgs/bg.jpg);
+  background-image: url(../imgs/bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: whitesmoke;
   min-height: 100vh;
   margin: 0px;
-  flex: column;
+  display: flex;
+  flex-flow: column;
   padding-bottom: 0px;
 }
 
 main {
-  margin: 10% 15%;
-  margin-top: 10%+32px;
+  margin: 7% 15%;
+  margin-top: 10%;
   background-color: #191919ed;
   flex: 1;
   border-radius: 15px;
