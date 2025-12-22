@@ -2,14 +2,105 @@
   display: flex;
   flex-flow: row nowrap;
   transition: all 0.3s ease-in-out;
+  height: 100%;
 }
 
 .slider {
   overflow: hidden;
+  height: clamp(260px, 45vh, 520px)
 }
 
 .proyecto {
   flex: 0 0 100%;
   display: flex;
+  align-items: stretch;
+  gap: 16px;
   flex-flow: row nowrap;
+}
+
+.proyecto .imagen {
+  height: 100%;
+  width: clamp(200px, 30vw, 420px);
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  flex: 0 0 auto;
+  border-radius: 15px;
+}
+
+.proyecto .imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.proyecto .imagen img {
+  transition: transform .35s ease, filter .35s ease;
+}
+
+.proyecto .imagen:hover img {
+  transform: scale(1.06);
+  filter: brightness(1.05) contrast(1.05);
+}
+
+.github-cta {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+
+  border: 1px solid rgba(255, 255, 255, .10);
+  backdrop-filter: blur(8px);
+}
+
+.github-cta__text {
+  margin: 0;
+  color: rgba(255, 255, 255, .85);
+  font-size: 1rem;
+}
+
+.github-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+
+  color: whitesmoke;
+  background: #19191900;
+
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.github-cta__btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, .25);
+  color: #191919ed;
+  background: whitesmoke;
+}
+
+.github-cta__btn:active {
+  transform: translateY(0px);
+  box-shadow: none;
+}
+
+.github-cta__btn:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 3px;
+}
+
+/* Responsive */
+@media (max-width: 560px) {
+  .github-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
