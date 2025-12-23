@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Experiencia </title>
 
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/experiencia.css" />
+  <link rel="stylesheet" href="../static/css/main.css" />
+  <link rel="stylesheet" href="../static/css/experiencia.css" />
 
   <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css" />
 </head>
@@ -17,13 +17,13 @@
     <nav>
       <ul>
         <li>
-          <a href="index.html"><i class="nf nf-cod-home"></i></a>
+          <a href="{{url_for('index')}}" id="derecha"><i class="nf nf-cod-home"></i></a>
         </li>
-        <li><a href="https://github.com/Bynocrack">Mi github</a></li>
-        <li><a href="proyectos.html">Mis principales proyectos</a></li>
-        <li><a href="experiencia.html">Mi experiencia</a></li>
-        <li><a href="agradecimientos.html">Mis amigos</a></li>
-        <li><a href="contacto.html">Mandame un mensaje!</a></li>
+        <li><a href="https://github.com/Bynocrack" target="_blank" rel="noopener">Mi github</a></li>
+        <li><a href="{{url_for('proyectos')}}">Mis principales proyectos</a></li>
+        <li><a href="{{url_for('experiencia')}}">Mi experiencia</a></li>
+        <li><a href="{{url_for('agradecimientos')}}">Mis amigos</a></li>
+        <li><a href="{{url_for('contacto')}}">Mandame un mensaje!</a></li>
       </ul>
     </nav>
   </header>
@@ -64,7 +64,6 @@
         </article>
       </div>
 
-      <!-- Habilidades -->
       <div class="card">
         <h2 class="card__title">Habilidades</h2>
 
@@ -102,7 +101,6 @@
         </div>
       </div>
 
-      <!-- Logros / métricas -->
       <div class="card">
         <h2 class="card__title">Logros</h2>
 

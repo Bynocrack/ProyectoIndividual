@@ -6,9 +6,9 @@
   <meta name="author" content="Josue Madueño" />
   <meta name="description" content="proyectos" />
   <title>Mis proyectos</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="../static/css/main.css" />
   <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css" type="text/css" />
-  <link rel="stylesheet" type="text/css" href="css/proyectos.css" />
+  <link rel="stylesheet" type="text/css" href="../static/css/proyectos.css" />
 </head>
 
 <body>
@@ -16,13 +16,13 @@
     <nav>
       <ul>
         <li>
-          <a href="index.html"><i class="nf nf-cod-home"></i></a>
+          <a href="{{url_for('index')}}" id="derecha"><i class="nf nf-cod-home"></i></a>
         </li>
-        <li><a href="https://github.com/Bynocrack">Mi github</a></li>
-        <li><a href="proyectos.html">Mis principales proyectos</a></li>
-        <li><a href="experiencia.html">Mi experiencia</a></li>
-        <li><a href="agradecimientos.html">Mis amigos</a></li>
-        <li><a href="contacto.html">Mandame un mensaje!</a></li>
+        <li><a href="https://github.com/Bynocrack" target="_blank" rel="noopener">Mi github</a></li>
+        <li><a href="{{url_for('proyectos')}}">Mis principales proyectos</a></li>
+        <li><a href="{{url_for('experiencia')}}">Mi experiencia</a></li>
+        <li><a href="{{url_for('agradecimientos')}}">Mis amigos</a></li>
+        <li><a href="{{url_for('contacto')}}">Mandame un mensaje!</a></li>
       </ul>
     </nav>
   </header>
@@ -31,7 +31,7 @@
       <div class="slider--inner">
         <div class="proyecto">
           <div class="imagen">
-            <img src="imgs/logoBanchoChanchito.png" alt="logo del banco chanchito">
+            <img src="../static/imgs/logoBanchoChanchito.png" alt="logo del banco chanchito">
           </div>
           <div>
             <h2>Banco Chanchito</h2>
@@ -44,7 +44,7 @@
         </div>
         <div class="proyecto">
           <div class="imagen">
-            <img src="imgs/perfil.jpg" alt="Mi foto">
+            <img src="../static/imgs/perfil.jpg" alt="Mi foto">
           </div>
           <div>
             <h2>Pagina portafolio</h2>
@@ -57,7 +57,7 @@
         </div>
         <div class="proyecto">
           <div class="imagen">
-            <img src="imgs/bg.jpg" alt="logo del banco chanchito">
+            <img src="../static/imgs/bg.jpg" alt="logo del banco chanchito">
           </div>
           <div>
             <h2>Venta de carros</h2>
@@ -84,7 +84,7 @@
   <footer>
     <p>Josue Madueño &lt;&lt;&copy;&gt;&gt; 2025</p>
   </footer>
-  <script src="js/proyectos.js"></script>
+  <script src="../static/js/proyectos.js"></script>
 </body>
 
 </html>
