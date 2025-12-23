@@ -29,3 +29,11 @@
   flex: 1 1 200px;
   margin: 5%;
 }
+
+@media(max-width: 760px) {
+  #descripcion {
+    text-align: center;
+    align-items: center;
+    flex-flow: column;
+  }
+}

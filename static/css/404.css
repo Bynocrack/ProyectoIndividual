@@ -1,0 +1,29 @@
+main {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.error {
+  margin: 3%;
+  font-size: 75pt;
+  font-weight: bold;
+}
+
+.descripcion--error {
+  margin: 3%;
+  font-size: 25pt;
+}
+
+.ups {
+  color: rgba(240, 248, 255, 0.607);
+}
+
+.volver {
+  color: rgb(203, 227, 248);
+}
+
+.volver:visited {
+  color: rgb(203, 227, 248);
+}
