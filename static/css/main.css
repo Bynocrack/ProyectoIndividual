@@ -10,7 +10,7 @@ a:hover {
   color: #eee;
 }
 
-header {
+nav {
   color: #171717;
   z-index: 100;
   position: fixed;
@@ -19,7 +19,7 @@ header {
   top: 0;
 }
 
-header nav ul li {
+nav ul li {
   float: left;
 }
 
@@ -73,4 +73,39 @@ footer {
 footer p {
   margin-bottom: 0px;
   padding: 10px;
+}
+
+.menu-hamburguesa {
+  display: none;
+  font-size: 24px;
+  background: #171717;
+  border-radius: 8px;
+  color: aliceblue;
+  cursor: pointer;
+  padding: 6px 10px;
+  position: fixed;
+}
+
+@media (max-width: 760px) {
+  .menu-hamburguesa {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    top: 56px;
+    right: -5px;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 180px;
+    z-index: 999;
+  }
+
+  nav.open {
+    display: flex;
+  }
 }

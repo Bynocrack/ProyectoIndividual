@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Josue Madueño" />
+  <meta name="description" content="about me" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Experiencia </title>
 
   <link rel="stylesheet" href="../static/css/main.css" />
@@ -14,7 +16,8 @@
 
 <body>
   <header>
-    <nav>
+    <button class="menu-hamburguesa" id="menu-hamburguesa" aria-expanded="false" aria-controls="main-menu"> ☰ </button>
+    <nav id="main-menu">
       <ul>
         <li>
           <a href="{{url_for('index')}}" id="derecha"><i class="nf nf-cod-home"></i></a>
@@ -125,6 +128,7 @@
   <footer>
     <p>Josue Madueño &lt;&lt;&copy;&gt;&gt; 2025</p>
   </footer>
+  <script src="../static/js/main.js"></script>
 </body>
 
 </html>
