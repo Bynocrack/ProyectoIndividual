@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
-'''uri = os.getenv("DATABASE_URL")
+uri = os.getenv("DATABASE_URL")
 
 if uri and uri.startswith("postgres://"):
   uri = uri.replace("postgres://", "postgresql://", 1)
@@ -15,13 +15,22 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 class Mensaje(db.Model):
+  id = db.Column(db.Integer, primary_key=True)
   nombre = db.Column(db.String(100), nullable=False)
   presupuesto = db.Column(db.Float, nullable=False)
   correo = db.Column(db.String(100), nullable=False)
   mensaje = db.Column(db.Text, nullable=False)
 
-with app.app_context():
-  db.create_all()'''
+if not uri:
+  raise RuntimeError("DATABASE_URL no está configurada en variables de entorno.")
+
+try:
+  with app.app_context():
+    db.create_all()
+    print("✅ Tablas listas (create_all).")
+except Exception as e:
+  print("Error creando tablas:", e)
+  raise
 
 @app.route('/')
 def index():
@@ -33,7 +42,7 @@ def agradecimientos():
 
 @app.route('/contacto', methods=['GET', 'POST'])
 def contacto():
-  '''if request.method == 'POST':
+  if request.method == 'POST':
     nombre = request.form['nombre']
     presupuesto = float(request.form['presupuesto'])
     correo = request.form['correo']
@@ -52,7 +61,7 @@ def contacto():
       return redirect(url_for('index'))
     except Exception as e:
       db.session.rollback()
-      return f"Ocurrió un error al enviar el mensaje: {e}"'''
+      return f"Ocurrió un error al enviar el mensaje: {e}"
 
   return render_template('contacto.html')
 
