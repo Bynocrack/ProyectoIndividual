@@ -20,6 +20,7 @@ class Mensaje(db.Model):
   presupuesto = db.Column(db.Float, nullable=False)
   correo = db.Column(db.String(100), nullable=False)
   mensaje = db.Column(db.Text, nullable=False)
+  estado = db.Column(db.Boolean, nullable=False, default=False, server_default=db.text('false'))
 
 if not uri:
   raise RuntimeError("DATABASE_URL no está configurada en variables de entorno.")

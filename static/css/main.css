@@ -89,11 +89,12 @@ footer p {
 @media (max-width: 760px) {
   .menu-hamburguesa {
     display: block;
+    top: 30px;
   }
 
   nav {
     display: none;
-    top: 56px;
+    top: 80px;
     right: -5px;
     background: #111;
     border: 1px solid #333;
