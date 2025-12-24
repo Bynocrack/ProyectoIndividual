@@ -20,7 +20,7 @@ Portafolio web multipágina para presentar mi **perfil**, **proyectos**, **exper
 - Assets organizados en `static/` y vistas en `templates/`.
 
 ## 🧰 Tecnologías
-- **Backend:** Python + Flask (app en `app.py`)
+- **Backend:** Python + Flask (app en `app.py`) + Base de Datos (postgresql)
 - **Frontend:** HTML, CSS, JavaScript
 
 ## 📁 Estructura del proyecto
